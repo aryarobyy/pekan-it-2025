@@ -35,7 +35,7 @@ const MessageBubble = React.memo(({
       )}
       <p className="break-words">{message.content}</p>
       <span className="text-[11px]">
-        {formatMessageDeliveryTime(message.createdAt)}
+        {formatMessageDeliveryTime(String(message.createdAt))}
       </span>
     </div>
   </div>

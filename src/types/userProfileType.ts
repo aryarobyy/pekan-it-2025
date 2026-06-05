@@ -5,7 +5,8 @@ export interface UserProfileType {
     city: string;
     province: string;
     country: string;
-    postalCode: string;
+    longitude: number;
+    latitude: number;
     isLocationShared: boolean;
     position: any; //temp
     createdAt: string;    

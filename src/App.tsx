@@ -96,7 +96,7 @@ function App() {
                 <Route path="/group-chat" element={<GroupChatPage />} />
                 <Route path="*" element={<UnknownRoute />} />
 
-                <Route path="/map" element={<Map userId={user?.id}/>} />
+                {user && <Route path="/map" element={<Map userId={user.id} />} />}
               </Routes>
             </main>
               <Footer />

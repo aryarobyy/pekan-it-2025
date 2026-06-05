@@ -164,7 +164,7 @@ export const requestFriend = async (data:any) => {
   }
 };
 
-export const updateFriendStatus = async (data: FriendReqType) => {
+export const updateFriendStatus = async (data: Partial<FriendReqType>) => {
   try {
     const res = await axiosInstance.post(`${USER_EP}/${FRIEND_EP}/status`, data);
     console.log("Data : ", res);

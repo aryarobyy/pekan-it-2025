@@ -20,7 +20,7 @@ const TodoDetail = () => {
                 label={p.label}
                 date={toDateKey(new Date(p.date))}
                 id={Number(p.id)}
-                color={p.}
+                color={"cyan"}
                 onChange={setTodoChecked}
               />
             ))}

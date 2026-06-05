@@ -110,7 +110,7 @@ const FindFriendsPage: React.FC<FriendPageProps> = ({ user }) => {
     try {
       if (!user?.id) return;
 
-      const data: FriendReqType = {
+      const data = {
         requesterId: user.id,
         receiverId: receiverId,
         status: FriendStatus.PENDING,
@@ -128,7 +128,7 @@ const FindFriendsPage: React.FC<FriendPageProps> = ({ user }) => {
       console.log("sndsaasn")
       console.log(requesterId)
       console.log(user.id)
-      const data: FriendReqType = {
+      const data = {
         requesterId: requesterId,
         receiverId: user.id,
         status: FriendStatus.ACCEPTED,
@@ -146,7 +146,7 @@ const FindFriendsPage: React.FC<FriendPageProps> = ({ user }) => {
       if (!user?.id) return;
       console.log(requesterId)
       console.log(user.id)
-      const data: FriendReqType = {
+      const data = {
         requesterId: requesterId,
         receiverId: user.id,
         status: FriendStatus.REJECTED,
@@ -163,7 +163,7 @@ const FindFriendsPage: React.FC<FriendPageProps> = ({ user }) => {
       if (!user?.id) return;
       console.log(requesterId)
       console.log(user.id)
-      const data: FriendReqType = {
+      const data = {
         requesterId: requesterId,
         receiverId: user.id,
         status: FriendStatus.BLOCKED,
